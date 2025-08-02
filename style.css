@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+
+body {
+    background-color: #8A51FC;
+}
+
+
+.logo-mao {
+    max-width: 375px;
+    width: 100%;
+    display: block;
+    /*é preciso colocar display block e margir letf/rigth em auto para que a imagem da mão fique centrada ao meio*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main {
+    width: 375px;
+    /*por padrão, div, main e section já é display block então não é preciso colocar display block nesse caso como foi feito na imagem para ela ficar centrada*/
+    border-radius: 20px;
+    background: #F4F4F4;
+    margin: 0 auto 40px;
+    /*para centralizar o main o 40px é para parte de baixo, para o main não encostar no "chão" e mostrar o fundo roxo*/
+    padding: 44px 24px 23px;
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select,
+input {
+    /*está selct,input porque o input que é onde colocamos o valor para ser convertido em determinada moeda, é o que está escrito 10 mil em número, tem o mesmo estilo que o select*/
+    border-radius: 4px;
+    border: 1px solid #BBB;
+    background: #FFF;
+    height: 48px;
+    width: 100%;
+    /*só de colocar o width em 100% ele vai ocupar todo o espaço disponivel, e aí ele não vai estourar porque tem o padding p segurar ele*/
+    margin-bottom: 24px;
+    appearance: none;
+    /*é a seta que fica para baixo indicando que podemos clicar para ver outras opções para selecionar*/
+    padding-left: 18px;
+    /*é a distancia do R$ Real brasileiro*/
+    font-size: 16px;
+    /*é a letra que está escrita R$ Real brasileiro*/
+    font-weight: 700;
+    /*é a letra que está escrita R$ Real brasileiro*/
+    color: #555555;
+    /*é a cor da letra do que está escrito R$ Real brasileiro*/
+    cursor: pointer;
+}
+
+button {
+    border-radius: 5px;
+    background: #772FD3;
+    width: 100%;
+    border: none;
+    height: 48px;
+    /*é a "largura" do botão*/
+    color: #FFFFFF;
+    /*é a cor do texto que está no botão*/
+    font-size: 18px;
+    /*é do texto que está no botão*/
+    font-weight: 700;
+    /*é do texto que está no botão*/
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    /*quando o botão for clicado irá aumentar p ipacity*/
+    opacity: 0.6;
+}
+
+section {
+    border-radius: 20px;
+    border: 1px solid #772FD3;
+    /*só clicar na borda que aparece o estilo/ cor da borda*/
+    margin-top: 36px;
+    padding: 12px;
+    /*esse padding é para afastar as imagens da bandeira e onde aparece o valor do border-radius*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-img {
+    margin: 15px 0;
+    /*parte de cima e de baixo com 15px e a parte dos lados não precisa de margim, para a seta se distanciar da parte que aparece o valor convertido*/
+}
+
+.currency-box {
+    /* esse é a div  onde está a bandeira/ valor convertido, aqui estamos alinhando eles*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    /*esse gap é a distância entre os itens, ele pega todos os itens e distanciar no mesmo padrão, que nessse caso escolhido é 4px*/
+}
+
+
+.currency {
+    /*esse é o texto Real/Dólar Americano/Libra*/
+    color: #777;
+    font-size: 14px;
+    /* não precisa do font-weight: 400; porque por padrão ele já vem 400*/
+}
+
+
+.currency-value,
+.currency-value-to-convert {
+    /*esse é o valor convertido*/
+    color: #555555;
+    font-size: 20px;
+    font-weight: 700;
+}
