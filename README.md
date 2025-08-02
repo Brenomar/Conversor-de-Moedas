@@ -10,7 +10,7 @@
 
 <br>
 
-<h2>📸 Captura de Tela</h2>
+<h2>🖥️ Demonstração da Interface</h2>
 
 <img src="https://github.com/Brenomar/Conversor-de-Moedas/blob/main/assets/conversor.jpg?raw=true" alt="Mockup do Conversor de Moedas" width="600">
 
